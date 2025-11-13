@@ -1,0 +1,48 @@
+running egg_info
+creating ../../build/smartsort_robot/smartsort_robot.egg-info
+writing ../../build/smartsort_robot/smartsort_robot.egg-info/PKG-INFO
+writing dependency_links to ../../build/smartsort_robot/smartsort_robot.egg-info/dependency_links.txt
+writing entry points to ../../build/smartsort_robot/smartsort_robot.egg-info/entry_points.txt
+writing requirements to ../../build/smartsort_robot/smartsort_robot.egg-info/requires.txt
+writing top-level names to ../../build/smartsort_robot/smartsort_robot.egg-info/top_level.txt
+writing manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+reading manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+writing manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rishabh/smartbot_ws/build/smartsort_robot/build
+creating /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib
+creating /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+copying smartsort_robot/robot_brain.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+copying smartsort_robot/gripper_controller.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+copying smartsort_robot/__init__.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+running install
+running install_lib
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/robot_brain.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/gripper_controller.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/__init__.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/robot_brain.py to robot_brain.cpython-312.pyc
+byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/gripper_controller.py to gripper_controller.cpython-312.pyc
+byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+copying resource/smartsort_robot -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+copying package.xml -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+copying launch/warehouse.launch.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+copying urdf/smartsort_ros2_control.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+copying urdf/smartsort_robot.urdf.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+copying urdf/smartsort_gazebo.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+copying worlds/warehouse.sdf -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/rviz
+running install_egg_info
+Copying ../../build/smartsort_robot/smartsort_robot.egg-info to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot-1.0.0-py3.12.egg-info
+running install_scripts
+Installing gripper_controller script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+Installing robot_brain script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+writing list of installed files to '/home/rishabh/smartbot_ws/build/smartsort_robot/install.log'

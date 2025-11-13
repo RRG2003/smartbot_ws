@@ -1,0 +1,614 @@
+[INFO] [launch]: All log files can be found below /home/rishabh/.ros/log/2025-11-13-19-48-31-501689-rishabh-HP-Laptop-14s-dk0xxx-14391
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [14397]
+[INFO] [gazebo-2]: process started with pid [14398]
+[INFO] [create-3]: process started with pid [14399]
+[INFO] [parameter_bridge-4]: process started with pid [14400]
+[INFO] [ros2_control_node-5]: process started with pid [14402]
+[robot_state_publisher-1] [INFO] [1763043512.305256154] [robot_state_publisher]: Robot initialized
+[ros2_control_node-5] [INFO] [1763043512.347021121] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[ros2_control_node-5] [INFO] [1763043512.352380673] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[create-3] [INFO] [1763043512.450211967] [spawn_smartsort_robot]: Requesting list of world names.
+[parameter_bridge-4] [INFO] [1763043512.580265899] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.581850271] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/cmd_vel (gz.msgs.Twist) -> /cmd_vel (geometry_msgs/msg/Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.584535849] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.585577170] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.588405996] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/odom (nav_msgs/msg/Odometry) -> /odom (gz.msgs.Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.589769599] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image_raw (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.593140545] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera/image_raw (sensor_msgs/msg/Image) -> /camera/image_raw (gz.msgs.Image)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.594633046] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1763043512.596336627] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/camera/camera_info (sensor_msgs/msg/CameraInfo) -> /camera/camera_info (gz.msgs.CameraInfo)] (Lazy 0)
+[gazebo-2] [1;36m[Dbg] [gz.cc:166] [0m[1;36mSubscribing to [[0m[1;36m/gazebo/starting_world[0m[1;36m].[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [gz.cc:168] [0m[1;36mWaiting for a world to be set from the GUI...[0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mReceived world [[0m[1;32m/home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds/warehouse.sdf[0m[1;32m] from the GUI.[0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [gz.cc:172] [0m[1;36mUnsubscribing from [[0m[1;36m/gazebo/starting_world[0m[1;36m].[0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.9.0[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds/warehouse.sdf[0m[1;32m].[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [Physics.cc:883] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mCreate service on [[0m[1;32m/world/warehouse/create[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mRemove service on [[0m[1;32m/world/warehouse/remove[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPose service on [[0m[1;32m/world/warehouse/set_pose[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPose service on [[0m[1;32m/world/warehouse/set_pose_vector[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mLight configuration service on [[0m[1;32m/world/warehouse/light_config[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPhysics service on [[0m[1;32m/world/warehouse/set_physics[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mSphericalCoordinates service on [[0m[1;32m/world/warehouse/set_spherical_coordinates[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mEnable collision service on [[0m[1;32m/world/warehouse/enable_collision[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mDisable collision service on [[0m[1;32m/world/warehouse/disable_collision[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mMaterial service on [[0m[1;32m/world/warehouse/visual_config[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mMaterial service on [[0m[1;32m/world/warehouse/wheel_slip[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/warehouse[0m[1;32m/control], [[0m[1;32m/world/warehouse[0m[1;32m/control/state] and [[0m[1;32m/world/warehouse[0m[1;32m/playback/control][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mwarehouse[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[create-3] [INFO] [1763043513.026478907] [spawn_smartsort_robot]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1763043513.039228062] [spawn_smartsort_robot]: Entity creation successful.
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[INFO] [create-3]: process has finished cleanly [pid 14399]
+[INFO] [spawner-6]: process started with pid [14534]
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/wareh[1;32m[Msg] [0m[1;32mGazebo Sim GUI    v[0m[1;32m8.9.0[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mDetected Wayland. Setting Qt to use the xcb plugin: [0m[1;32m'QT_QPA_PLATFORM=xcb'.[0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [Gui.cc:275] [0m[1;36mWaiting for subscribers to [[0m[1;36m/gazebo/starting_world[0m[1;36m]...[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Application.cc:96] [0m[1;36mInitializing application.[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Application.cc:170] [0m[1;36mQt using OpenGL graphics interface[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:657] [0m[1;36mCreate main window[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [PathManager.cc:68] [0m[1;36mRequesting resource paths through [[0m[1;36m/gazebo/resource_paths/get[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Gui.cc:355] [0m[1;36mGUI requesting list of world names. The server may be busy [0m[1;36mdownloading resources. Please be patient.[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [PathManager.cc:57] [0m[1;36mReceived resource paths.[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Gui.cc:413] [0m[1;36mRequesting GUI from [[0m[1;36m/world/warehouse/gui/info[0m[1;36m]...[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [GuiRunner.cc:149] [0m[1;36mRequesting initial state from [[0m[1;36m/world/warehouse/state[0m[1;36m]...[0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoading config [[0m[1;32m/home/rishabh/.gz/sim/8/gui.config[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mMinimalScene[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [MinimalScene.cc:986] [0m[1;36mCreating render thread interface for OpenGL[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [MinimalScene.cc:802] [0m[1;36mCreating gz-rendering interface for OpenGL[0m[1;36m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [MinimalScene.cc:986] [0m[1;36mCreating render thread interface for OpenGL[0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32m3D View[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mMinimalScene[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libMinimalScene.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mEntityContextMenuPlugin[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCurrently tracking topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mEntity Context Menu[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mEntityContextMenuPlugin[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libEntityContextMenuPlugin.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mGzSceneManager[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mScene Manager[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mGzSceneManager[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libGzSceneManager.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mInteractiveViewControl[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera view controller topic advertised on [[0m[1;32m/gui/camera/view_control[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera reference visual topic advertised on [[0m[1;32m/gui/camera/view_control/reference_visual[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCamera view control sensitivity advertised on [[0m[1;32m/gui/camera/view_control/sensitivity[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mInteractive view control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mInteractiveViewControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libInteractiveViewControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mCameraTracking[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mCamera tracking[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mCameraTracking[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libCameraTracking.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mMarkerManager[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/warehouse/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mMarker Manager[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mMarkerManager[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libMarkerManager.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mSelectEntities[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mSelect entities[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mSelectEntities[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libSelectEntities.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mSpawn[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mSpawn[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mSpawn[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libSpawn.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mVisualizationCapabilities[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView as transparent service on [[0m[1;32m/gui/view/transparent[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView as wireframes service on [[0m[1;32m/gui/view/wireframes[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView center of mass service on [[0m[1;32m/gui/view/com[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView inertia service on [[0m[1;32m/gui/view/inertia[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView collisions service on [[0m[1;32m/gui/view/collisions[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView joints service on [[0m[1;32m/gui/view/joints[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mView frames service on [[0m[1;32m/gui/view/frames[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mVisualization capabilities[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mVisualizationCapabilities[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libVisualizationCapabilities.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mWorldControl[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mUsing world control service [[0m[1;32m/world/warehouse/control[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/warehouse/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[spawner-6] [INFO] [1763043514.054066610] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/ComponentInspector/ComponentInspector.qml:251:3: QML Dialog: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:413:17: QML ToolButton: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file:///usr/lib/x86_64-linux-gnu/qt5/qml/QtQuick/Dialogs/DefaultFileDialog.qml:309:21: QML Button: Binding loop detected for property "implicitHeight"[0m[1;33m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [WorldControl.cc:237] [0m[1;36mUsing an event to share WorldControl msgs with the server[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mWorldControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libWorldControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mWorldStats[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mListening to stats on [[0m[1;32m/world/warehouse/stats[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mWorld stats[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mWorldStats[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libWorldStats.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mShapes[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mShapes[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mShapes[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libShapes.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mLights[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mLights[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mLights[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libLights.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mTransformControl[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mTransform control[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mTransformControl[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libTransformControl.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mScreenshot[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mScreenshot service on [[0m[1;32m/gui/screenshot[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mScreenshot[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mScreenshot[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_gui_vendor/lib/gz-gui-8/plugins/libScreenshot.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mCopyPaste[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mCopy/Paste[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mCopyPaste[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libCopyPaste.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mComponentInspector[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mAdded plugin [[0m[1;32mComponent inspector[0m[1;32m] to main window[0m[1;32m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mLoaded plugin [[0m[1;32mComponentInspector[0m[1;32m] from path [[0m[1;32m/opt/ros/jazzy/opt/gz_sim_vendor/lib/gz-sim-8/plugins/gui/libComponentInspector.so[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[GUI] [Dbg] [Application.cc:528] [0m[1;36mLoading plugin [[0m[1;36mEntityTree[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;32m[GUI] [0m[1;32m[Msg] [0m[1;32mCurrently tracking topic on [[0m[1;32m/gui/currently_tracked[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;33m[GUI] [Wrn] [Application.cc:908] [0m[1;33m[QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:933] [0m[1;33mGazebo does not support Ogre material scripts. See [0m[1;33mhttps://gazebosim.org/api/sim/8/migrationsdf.html#:~:text=Materials [0m[1;33mfor details.[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:949] [0m[1;33mUsing an internal gazebo.material to parse [0m[1;33mGazebo/Blue[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:933] [0m[1;33mGazebo does not support Ogre material scripts. See [0m[1;33mhttps://gazebosim.org/api/sim/8/migrationsdf.html#:~:text=Materials [0m[1;33mfor details.[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:949] [0m[1;33mUsing an internal gazebo.material to parse [0m[1;33mGazebo/Grey[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:933] [0m[1;33mGazebo does not support Ogre material scripts. See [0m[1;33mhttps://gazebosim.org/api/sim/8/migrationsdf.html#:~:text=Materials [0m[1;33mfor details.[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:949] [0m[1;33mUsing an internal gazebo.material to parse [0m[1;33mGazebo/Black[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:933] [0m[1;33mGazebo does not support Ogre material scripts. See [0m[1;33mhttps://gazebosim.org/api/sim/8/migrationsdf.html#:~:text=Materials [0m[1;33mfor details.[0m[1;33m[0m
+[gazebo-2] [1;33m[Wrn] [SdfEntityCreator.cc:949] [0m[1;33mUsing an internal gazebo.material to parse [0m[1;33mGazebo/Black[0m[1;33m[0m
+[INFO] [spawner-7]: process started with pid [14605]
+[gazebo-2] [INFO] [1763043515.499755761] [gz_ros_control]: Loading controller_manager
+[gazebo-2] [INFO] [1763043515.528106799] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-2] [INFO] [1763043515.534321007] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-2] [WARN] [1763043515.544151023] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-2] [INFO] [1763043516.318874517] [controller_manager]: Received robot description from topic.
+[gazebo-2] [INFO] [1763043516.328867685] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-2] [INFO] [1763043516.328969357] [gz_ros_control]: Loading joint: left_wheel_joint
+[gazebo-2] [INFO] [1763043516.328976702] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.328983175] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.328993096] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329003598] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329008729] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329028129] [gz_ros_control]: Loading joint: right_wheel_joint
+[gazebo-2] [INFO] [1763043516.329033931] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329038921] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329044784] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329049904] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329054995] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329071139] [gz_ros_control]: Loading joint: shoulder_joint
+[gazebo-2] [INFO] [1763043516.329076470] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329081350] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329087312] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329092443] [gz_ros_control]: 		 effort
+[gazebo-2] [INFO] [1763043516.329097533] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329102384] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329115982] [gz_ros_control]: Loading joint: elbow_joint
+[gazebo-2] [INFO] [1763043516.329129199] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329134350] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329139501] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329146135] [gz_ros_control]: 		 effort
+[gazebo-2] [INFO] [1763043516.329151466] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329156516] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329170225] [gz_ros_control]: Loading joint: wrist_joint
+[gazebo-2] [INFO] [1763043516.329175876] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329180666] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329185998] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329191008] [gz_ros_control]: 		 effort
+[gazebo-2] [INFO] [1763043516.329195908] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329200608] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329214657] [gz_ros_control]: Loading joint: left_finger_joint
+[gazebo-2] [INFO] [1763043516.329220309] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329225380] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329230400] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329235340] [gz_ros_control]: 		 effort
+[gazebo-2] [INFO] [1763043516.329279161] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329285635] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329299885] [gz_ros_control]: Loading joint: right_finger_joint
+[gazebo-2] [INFO] [1763043516.329305446] [gz_ros_control]: 	State:
+[gazebo-2] [INFO] [1763043516.329310336] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329317411] [gz_ros_control]: 		 velocity
+[gazebo-2] [INFO] [1763043516.329322632] [gz_ros_control]: 		 effort
+[gazebo-2] [INFO] [1763043516.329327622] [gz_ros_control]: 	Command:
+[gazebo-2] [INFO] [1763043516.329332452] [gz_ros_control]: 		 position
+[gazebo-2] [INFO] [1763043516.329529733] [controller_manager]: Initialize hardware 'SmartSortSystem' 
+[gazebo-2] [WARN] [1763043516.329611974] [controller_manager]: Executor is not available during hardware component initialization for 'SmartSortSystem'. Skipping node creation!
+[gazebo-2] [WARN] [1763043516.329702062] [gz_ros_control]: The ign_ros2_control plugin got renamed to gz_ros2_control.
+[gazebo-2] Update the <ros2_control> tag and gazebo plugin to
+[gazebo-2] <hardware>
+[gazebo-2]   <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+[gazebo-2] </hardware>
+[gazebo-2] <gazebo>
+[gazebo-2]   <plugin filename="gz_ros2_control-system"name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+[gazebo-2]     ...
+[gazebo-2]   </plugin>
+[gazebo-2] </gazebo>
+[gazebo-2] [INFO] [1763043516.329913632] [controller_manager]: Successful initialization of hardware 'SmartSortSystem'
+[gazebo-2] [INFO] [1763043516.330290416] [resource_manager]: 'configure' hardware 'SmartSortSystem' 
+[gazebo-2] [INFO] [1763043516.330310638] [gz_ros_control]: System Successfully configured!
+[gazebo-2] [INFO] [1763043516.330336261] [resource_manager]: Successful 'configure' of hardware 'SmartSortSystem'
+[gazebo-2] [INFO] [1763043516.330351844] [resource_manager]: 'activate' hardware 'SmartSortSystem' 
+[gazebo-2] [INFO] [1763043516.330368338] [resource_manager]: Successful 'activate' of hardware 'SmartSortSystem'
+[gazebo-2] [WARN] [1763043516.330503830] [controller_manager]: Component 'SmartSortSystem' does not have read or write statistics initialized, skipping registration.
+[gazebo-2] [INFO] [1763043516.330529133] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-2] [INFO] [1763043516.559829730] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-2] [INFO] [1763043516.559962887] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-2] [INFO] [1763043516.567481616] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /home/rishabh/smartbot_ws/install/smartsort_controllers/share/smartsort_controllers/config/controller_manager.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-6] [INFO] [1763043516.591468989] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gazebo-2] [INFO] [1763043516.593911973] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-2] [INFO] [1763043516.594476007] [joint_state_broadcaster]: Publishing state interfaces defined in 'joints' and 'interfaces' parameters.
+[gazebo-2] [WARN] [1763043516.594567377] [joint_state_broadcaster]: Mapping from 'position' to interface 'position' will not be done, because 'position' is defined in 'interface' parameter.
+[gazebo-2] [WARN] [1763043516.594584142] [joint_state_broadcaster]: Mapping from 'velocity' to interface 'velocity' will not be done, because 'velocity' is defined in 'interface' parameter.
+[gazebo-2] [INFO] [1763043516.613033289] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[INFO] [spawner-8]: process started with pid [14635]
+[gazebo-2] [1;32m[GUIouse[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:533] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m3[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mDiffDrive subscribing to twist messages on [[0m[1;32mcmd_vel[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::DiffDrive[0m[1;36m] for entity [[0m[1;36m31[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mign_ros2_control::IgnitionROS2ControlPlugin[0m[1;36m] for entity [[0m[1;36m31[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::JointStatePublisher[0m[1;36m] for entity [[0m[1;36m31[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [UserCommands.cc:1318] [0m[1;36mCreated entity [[0m[1;36m31[0m[1;36m] named [[0m[1;36msmartsort_robot[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:349] [0m[1;36mInitializing render context[0m[1;36m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/warehouse/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/warehouse/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/warehouse/state[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/warehouse[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-2] [1;36m[Dbg] [EntityComponentManager.cc:1656] [0m[1;36mUpdated state thread iterators: [0m[1;36m8[0m[1;36m threads processing around [0m[1;36m9[0m[1;36m entities each.[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:560] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:533] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m6[0m[1;36m[0m
+[gazebo-2] [WARN] [1763043517.618403153] [gz_ros_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-2] [1;33m[Wrn] [Ogre2Camera.cc:421] [0m[1;33mOgre2Camera::SetVisibilityMask: Mask bits [0m[1;33mc0000000[0m[1;33m are set but will be ignored as they conflict with the [0m[1;33mreserved bits used internally by the ogre2 backend.[0m[1;33m[0m
+[gazebo-2] [INFO] [1763043517.995709763] [controller_manager]: Successfully switched controllers!
+[ros2_control_node-5] [INFO] [1763043517.998065945] [controller_manager]: update rate is 50 Hz
+[ros2_control_node-5] [INFO] [1763043517.998183029] [controller_manager]: Overruns handling is : enabled
+[ros2_control_node-5] [INFO] [1763043517.998197950] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-5] [WARN] [1763043517.998561616] [controller_manager]: Could not enable FIFO RT scheduling policy: with error number <1>(Operation not permitted). See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[ros2_control_node-5] [WARN] [1763043517.999314613] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [INFO] [1763043517.999660863] [controller_manager]: Received robot description from topic.
+[ros2_control_node-5] [INFO] [1763043518.005731358] [controller_manager]: Loading hardware 'SmartSortSystem' 
+[ros2_control_node-5] [ERROR] [1763043518.005835886] [controller_manager]: Caught exception of type : N9pluginlib20LibraryLoadExceptionE while loading hardware: According to the loaded plugin descriptions the class ign_ros2_control/IgnitionSystem with base class type hardware_interface::SystemInterface does not exist. Declared types are  mock_components/GenericSystem
+[ros2_control_node-5] [WARN] [1763043518.005909980] [controller_manager]: Could not load and initialize hardware. Please check previous output for more details. After you have corrected your URDF, try to publish robot description again.
+[spawner-6] [INFO] [1763043518.023566268] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gazebo-2] [INFO] [1763043518.207192104] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
+[gazebo-2] [INFO] [1763043518.207312053] [controller_manager]: Loading controller 'arm_controller'
+[gazebo-2] [INFO] [1763043518.219390782] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /home/rishabh/smartbot_ws/install/smartsort_controllers/share/smartsort_controllers/config/controller_manager.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[INFO] [robot_brain-9]: process started with pid [14720]
+[INFO] [gripper_controller-10]: process started with pid [14721]
+[INFO] [spawner-6]: process has finished cleanly [pid 14534]
+[spawner-7] [INFO] [1763043518.324871755] [spawner_arm_controller]: [94mLoaded [1marm_controller[0m
+[gazebo-2] [INFO] [1763043518.330858725] [controller_manager]: Configuring controller: 'arm_controller'
+[gazebo-2] [INFO] [1763043518.331320065] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-2] [INFO] [1763043518.331429833] [arm_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-2] [INFO] [1763043518.331502133] [arm_controller]: Using 'splines' interpolation method.
+[gazebo-2] [INFO] [1763043518.345181041] [arm_controller]: Action status changes will be monitored at 20.00 Hz.
+[ros2_control_node-5] [WARN] [1763043518.352374170] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gazebo-2] [INFO] [1763043518.402471043] [controller_manager]: Activating controllers: [ arm_controller ]
+[gazebo-2] [INFO] [1763043518.426023774] [controller_manager]: Successfully switched controllers!
+[spawner-7] [INFO] [1763043518.462096953] [spawner_arm_controller]: [92mConfigured and activated [1marm_controller[0m
+[spawner-8] [INFO] [1763043518.710802992] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-7]: process has finished cleanly [pid 14605]
+[gripper_controller-10] [INFO] [1763043519.322332367] [gripper_controller]: Gripper Controller initialized
+[ros2_control_node-5] [WARN] [1763043519.351774343] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043520.112504295] [smartsort_brain]: SmartSort Robot Initialized
+[robot_brain-9] [INFO] [1763043520.113384214] [smartsort_brain]: Current State: SEARCHING
+[gazebo-2] [INFO] [1763043520.216795097] [controller_manager]: Loading controller : 'gripper_controller' of type 'position_controllers/JointGroupPositionController'
+[gazebo-2] [INFO] [1763043520.216865053] [controller_manager]: Loading controller 'gripper_controller'
+[gazebo-2] [INFO] [1763043520.227733378] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /home/rishabh/smartbot_ws/install/smartsort_controllers/share/smartsort_controllers/config/controller_manager.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-8] [INFO] [1763043520.266156443] [spawner_gripper_controller]: [94mLoaded [1mgripper_controller[0m
+[gazebo-2] [INFO] [1763043520.269364439] [controller_manager]: Configuring controller: 'gripper_controller'
+[gazebo-2] [INFO] [1763043520.273296450] [gripper_controller]: configure successful
+[gazebo-2] [INFO] [1763043520.294469189] [controller_manager]: Activating controllers: [ gripper_controller ]
+[gazebo-2] [INFO] [1763043520.312993152] [gripper_controller]: activate successful
+[gazebo-2] [INFO] [1763043520.313117170] [controller_manager]: Successfully switched controllers!
+[spawner-8] [INFO] [1763043520.336721772] [spawner_gripper_controller]: [92mConfigured and activated [1mgripper_controller[0m
+[ros2_control_node-5] [WARN] [1763043520.351698965] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [SimulationRunner.cc:544] [0m[1;36mCreating postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [RenderUtil.cc:2643] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:391] [0m[1;36mRendering Thread initialized[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [CameraSensor.cc:405] [0m[1;36mCamera images for [[0m[1;36msmartsort_robot::base_footprint::camera[0m[1;36m] advertised on [[0m[1;36mcamera/image_raw[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [CameraSensor.cc:695] [0m[1;36mCamera info for [[0m[1;36msmartsort_robot::base_footprint::camera[0m[1;36m] advertised on [[0m[1;36m/camera/camera_info[0m[1;36m][0m[1;36m[0m
+[gazebo-2] [1;36m[Dbg] [CameraSensor.cc:504] [0m[1;36mEnabling camera sensor: '[0m[1;36msmartsort_robot::base_footprint::camera[0m[1;36m' data [0m[1;36mgeneration.[0m[1;36m[0m
+[INFO] [spawner-8]: process has finished cleanly [pid 14635]
+[ros2_control_node-5] [WARN] [1763043521.351698717] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043522.351703695] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[parameter_bridge-4] [INFO] [1763043522.625226362] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[robot_brain-9] [INFO] [1763043522.662877274] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.675001530] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.683793105] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.693034295] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.703793927] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.713365723] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.724177553] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.731906763] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.741442113] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.748936986] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.759869858] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.772654395] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.774834953] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043522.789639885] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.822678449] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043522.861131958] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043523.351682908] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043524.351708479] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043524.887872184] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043524.900601446] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043524.902262753] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043524.903678180] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043525.351764008] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043525.910421353] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043526.351715598] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043526.903692662] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043526.904512162] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043526.918845390] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043526.921538333] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043527.351727595] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043528.351740176] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043529.351752604] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043530.351695328] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043531.351683418] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043531.923492726] [smartsort_brain]: State: NAVIGATING -> DROPPING
+[robot_brain-9] [INFO] [1763043531.938496427] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043531.940514163] [smartsort_brain]: Opening gripper to drop package...
+[gripper_controller-10] [INFO] [1763043531.943918399] [gripper_controller]: Opening gripper...
+[ros2_control_node-5] [WARN] [1763043532.351666404] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043532.951235392] [gripper_controller]: Gripper opened
+[ros2_control_node-5] [WARN] [1763043533.351852238] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043533.941974299] [smartsort_brain]: Package delivered successfully!
+[robot_brain-9] [INFO] [1763043533.943005843] [smartsort_brain]: State: DROPPING -> RETURNING
+[robot_brain-9] [INFO] [1763043533.955675114] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043533.958058373] [smartsort_brain]: Returning to search area...
+[ros2_control_node-5] [WARN] [1763043534.351698932] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043535.353837096] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043536.351693851] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043537.351716962] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043538.351697429] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043538.959812700] [smartsort_brain]: State: RETURNING -> SEARCHING
+[robot_brain-9] [INFO] [1763043538.960634316] [smartsort_brain]: Ready for next package!
+[robot_brain-9] [INFO] [1763043538.972389022] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043538.974932052] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043538.990502455] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043539.002793937] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043539.016866809] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043539.029732700] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043539.046759417] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043539.061964014] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043539.351752836] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043540.351712735] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043541.064824370] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043541.077235795] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043541.079177349] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043541.081217967] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043541.351736087] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043542.089529375] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043542.351689780] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043543.080687259] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043543.081752203] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043543.098580823] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043543.101066475] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043543.351732395] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043544.351724785] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043545.351704452] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043546.351704718] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043547.351719804] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043548.102915032] [smartsort_brain]: State: NAVIGATING -> DROPPING
+[robot_brain-9] [INFO] [1763043548.114799932] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043548.116747067] [smartsort_brain]: Opening gripper to drop package...
+[gripper_controller-10] [INFO] [1763043548.118829040] [gripper_controller]: Opening gripper...
+[ros2_control_node-5] [WARN] [1763043548.351767448] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043549.126139408] [gripper_controller]: Gripper opened
+[ros2_control_node-5] [WARN] [1763043549.351699318] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043550.118252439] [smartsort_brain]: Package delivered successfully!
+[robot_brain-9] [INFO] [1763043550.119017312] [smartsort_brain]: State: DROPPING -> RETURNING
+[robot_brain-9] [INFO] [1763043550.131633979] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043550.135083681] [smartsort_brain]: Returning to search area...
+[ros2_control_node-5] [WARN] [1763043550.351709025] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043551.351697339] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043552.351714864] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043553.351714068] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043554.351687296] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043555.136986074] [smartsort_brain]: State: RETURNING -> SEARCHING
+[robot_brain-9] [INFO] [1763043555.137835227] [smartsort_brain]: Ready for next package!
+[robot_brain-9] [INFO] [1763043555.150181095] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.153363446] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043555.164681905] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.176687444] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.190394916] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.203929714] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.217038958] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.229615870] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.240137794] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.252154587] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043555.267542658] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043555.351716179] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043556.351706836] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043557.270104807] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043557.280454825] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043557.282510741] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043557.284339482] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043557.351687599] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043558.290476051] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043558.351684936] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043559.284108214] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043559.284976153] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043559.299319220] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043559.302609464] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043559.351710752] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043560.351677551] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043561.351851311] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043562.351711948] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043563.351690198] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043564.304586732] [smartsort_brain]: State: NAVIGATING -> DROPPING
+[robot_brain-9] [INFO] [1763043564.318205189] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043564.320498872] [smartsort_brain]: Opening gripper to drop package...
+[gripper_controller-10] [INFO] [1763043564.322491339] [gripper_controller]: Opening gripper...
+[ros2_control_node-5] [WARN] [1763043564.351943837] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043565.329920803] [gripper_controller]: Gripper opened
+[ros2_control_node-5] [WARN] [1763043565.351736629] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043566.321888709] [smartsort_brain]: Package delivered successfully!
+[robot_brain-9] [INFO] [1763043566.322885838] [smartsort_brain]: State: DROPPING -> RETURNING
+[robot_brain-9] [INFO] [1763043566.336365793] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043566.338515199] [smartsort_brain]: Returning to search area...
+[ros2_control_node-5] [WARN] [1763043566.351816850] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043567.351703967] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043568.351713600] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043569.351687868] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043570.351736509] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043571.339709757] [smartsort_brain]: State: RETURNING -> SEARCHING
+[robot_brain-9] [INFO] [1763043571.340668214] [smartsort_brain]: Ready for next package!
+[ros2_control_node-5] [WARN] [1763043571.351863261] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043571.352695941] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.354814997] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043571.365325406] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.380721520] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.391481278] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.406169035] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.423935078] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.437178296] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.452206499] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.467183838] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.480194171] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.493010517] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.506077205] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043571.530952833] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043572.352353450] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043573.351762640] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043573.546464738] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043573.562027312] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043573.564327304] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043573.566360022] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043574.351844181] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043574.573886352] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043575.351808086] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043575.566014498] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043575.567105833] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043575.578488704] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043575.580625651] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043576.351698386] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043577.351677464] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043578.352947052] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043579.351996068] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043580.351856852] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043580.582815217] [smartsort_brain]: State: NAVIGATING -> DROPPING
+[robot_brain-9] [INFO] [1763043580.603128685] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043580.606143593] [smartsort_brain]: Opening gripper to drop package...
+[gripper_controller-10] [INFO] [1763043580.608670218] [gripper_controller]: Opening gripper...
+[ros2_control_node-5] [WARN] [1763043581.351725230] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043581.621411366] [gripper_controller]: Gripper opened
+[ros2_control_node-5] [WARN] [1763043582.351682609] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043582.607783055] [smartsort_brain]: Package delivered successfully!
+[robot_brain-9] [INFO] [1763043582.608746365] [smartsort_brain]: State: DROPPING -> RETURNING
+[robot_brain-9] [INFO] [1763043582.622654975] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043582.626172963] [smartsort_brain]: Returning to search area...
+[ros2_control_node-5] [WARN] [1763043583.351689992] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043584.352677502] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043585.351736558] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043586.352042499] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043587.351693700] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043587.629199081] [smartsort_brain]: State: RETURNING -> SEARCHING
+[robot_brain-9] [INFO] [1763043587.630320609] [smartsort_brain]: Ready for next package!
+[robot_brain-9] [INFO] [1763043587.643988298] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.646766081] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043587.657578930] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.669968210] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.682417654] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.694806604] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.711015165] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.730184571] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.744272873] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.757523575] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.771374285] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.786975702] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.807505682] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043587.867444508] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043588.351693624] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043589.351682523] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043589.875000815] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043589.876931105] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043589.878955856] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043590.351683315] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043590.885901499] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043591.351731043] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043591.878806864] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043591.879833037] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043591.893346800] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043591.913171700] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043591.916998766] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043592.351697200] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043593.351755909] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043594.351757922] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043595.351707419] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043596.351760078] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043596.918634057] [smartsort_brain]: State: NAVIGATING -> DROPPING
+[robot_brain-9] [INFO] [1763043596.939521562] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043596.944053736] [smartsort_brain]: Opening gripper to drop package...
+[gripper_controller-10] [INFO] [1763043596.947092904] [gripper_controller]: Opening gripper...
+[ros2_control_node-5] [WARN] [1763043597.351775367] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043597.956411101] [gripper_controller]: Gripper opened
+[ros2_control_node-5] [WARN] [1763043598.351784280] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043598.946578562] [smartsort_brain]: Package delivered successfully!
+[robot_brain-9] [INFO] [1763043598.947651545] [smartsort_brain]: State: DROPPING -> RETURNING
+[robot_brain-9] [INFO] [1763043598.964178324] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043598.966716264] [smartsort_brain]: Returning to search area...
+[ros2_control_node-5] [WARN] [1763043599.351735255] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043600.351754230] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043601.351723448] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043602.351709838] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043603.351703401] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043603.969287002] [smartsort_brain]: State: RETURNING -> SEARCHING
+[robot_brain-9] [INFO] [1763043603.971151983] [smartsort_brain]: Ready for next package!
+[robot_brain-9] [INFO] [1763043603.985741036] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043603.990177208] [smartsort_brain]: State: SEARCHING -> APPROACHING
+[robot_brain-9] [INFO] [1763043604.009214572] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.028608852] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.046554082] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.063973419] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.076942790] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.092827484] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043604.109414749] [smartsort_brain]: Package detected: BLUE
+[ros2_control_node-5] [WARN] [1763043604.353036573] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043605.351986831] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043606.113049181] [smartsort_brain]: State: APPROACHING -> PICKING
+[robot_brain-9] [INFO] [1763043606.126636666] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043606.129565514] [smartsort_brain]: Closing gripper...
+[gripper_controller-10] [INFO] [1763043606.132933239] [gripper_controller]: Closing gripper...
+[ros2_control_node-5] [WARN] [1763043606.351760980] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gripper_controller-10] [INFO] [1763043607.141493096] [gripper_controller]: Gripper closed
+[ros2_control_node-5] [WARN] [1763043607.352738618] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[robot_brain-9] [INFO] [1763043608.132272174] [smartsort_brain]: Package secured. Target: (5.0, 0.0, 0.0)
+[robot_brain-9] [INFO] [1763043608.133555105] [smartsort_brain]: State: PICKING -> NAVIGATING
+[robot_brain-9] [INFO] [1763043608.152157201] [smartsort_brain]: Package detected: BLUE
+[robot_brain-9] [INFO] [1763043608.155926122] [smartsort_brain]: Navigating to (5.0, 0.0, 0.0)...
+[ros2_control_node-5] [WARN] [1763043608.351720884] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[ros2_control_node-5] [WARN] [1763043609.351712913] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization

@@ -1,1 +1,0 @@
-/home/rishabh/smartbot_ws/src/smartsort_robot/launch/warehouse.launch.py

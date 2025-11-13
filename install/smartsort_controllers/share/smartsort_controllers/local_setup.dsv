@@ -1,1 +1,2 @@
-/home/rishabh/smartbot_ws/build/smartsort_controllers/ament_cmake_environment_hooks/local_setup.dsv
+source;share/smartsort_controllers/environment/ament_prefix_path.sh
+source;share/smartsort_controllers/environment/path.sh

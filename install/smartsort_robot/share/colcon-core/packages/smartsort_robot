@@ -1,1 +1,1 @@
-cv_bridge:gazebo_ros_pkgs:geometry_msgs:gz_ros2_control:joint_state_publisher:rclpy:robot_state_publisher:ros_gz_bridge:ros_gz_sim:rviz2:sensor_msgs:std_msgs:urdf
+controller_manager:cv_bridge:gazebo_ros_pkgs:geometry_msgs:gz_ros2_control:joint_state_broadcaster:joint_state_publisher:joint_trajectory_controller:position_controllers:rclpy:robot_state_publisher:ros_gz_bridge:ros_gz_sim:rviz2:sensor_msgs:std_msgs:urdf

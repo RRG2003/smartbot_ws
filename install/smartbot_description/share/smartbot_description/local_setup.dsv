@@ -1,1 +1,2 @@
-/home/rishabh/smartbot_ws/build/smartbot_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/smartbot_description/environment/ament_prefix_path.sh
+source;share/smartbot_description/environment/path.sh
