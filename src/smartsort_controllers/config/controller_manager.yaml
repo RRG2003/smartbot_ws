@@ -1,0 +1,88 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz - frequency of controller updates
+    use_sim_time: true
+
+    # --- Controllers to start automatically ---
+    active_controllers: [
+      joint_state_broadcaster,
+      diff_drive_controller,
+      arm_controller,
+      gripper_controller
+    ]
+
+    # Joint State Broadcaster (publishes joint states)
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # Differential Drive Controller for base wheels
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+      ros__parameters:
+        publish_rate: 50
+        base_frame_id: base_link
+        left_wheel_names: ["left_wheel_joint"]
+        right_wheel_names: ["right_wheel_joint"]
+        wheel_separation: 0.45
+        wheel_radius: 0.1
+        cmd_vel_timeout: 0.5
+        use_stamped_vel: false
+        enable_odom_tf: true
+        odom_frame_id: odom
+        publish_cmd: true
+        publish_wheel_data: true
+        # PID tuning (basic, can adjust if needed)
+        velocity_rolling_window_size: 2
+        linear.x.has_velocity_limits: true
+        linear.x.has_acceleration_limits: true
+        linear.x.max_velocity: 0.8
+        linear.x.max_acceleration: 0.8
+        angular.z.has_velocity_limits: true
+        angular.z.has_acceleration_limits: true
+        angular.z.max_velocity: 2.0
+        angular.z.max_acceleration: 2.0
+
+    # Arm controller (shoulder, elbow, wrist)
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+      ros__parameters:
+        joints:
+          - shoulder_joint
+          - elbow_joint
+          - wrist_joint
+        command_interfaces: ["position"]
+        state_interfaces: ["position", "velocity"]
+        allow_partial_joints_goal: true
+        constraints:
+          goal_time: 2.0
+          stopped_velocity_tolerance: 0.01
+          shoulder_joint:
+            trajectory: 0.1
+            goal: 0.1
+          elbow_joint:
+            trajectory: 0.1
+            goal: 0.1
+          wrist_joint:
+            trajectory: 0.1
+            goal: 0.1
+        gains:
+          shoulder_joint: {p: 20.0, i: 0.5, d: 1.0}
+          elbow_joint: {p: 15.0, i: 0.4, d: 1.0}
+          wrist_joint: {p: 10.0, i: 0.2, d: 0.5}
+
+    # Gripper controller (prismatic fingers)
+    gripper_controller:
+      type: joint_group_position_controller/JointGroupPositionController
+      ros__parameters:
+        joints:
+          - left_finger_joint
+          - right_finger_joint
+        command_interfaces: ["position"]
+        state_interfaces: ["position", "velocity"]
+        # PID for gripper motion
+        gains:
+          left_finger_joint: {p: 20.0, i: 0.1, d: 0.2}
+          right_finger_joint: {p: 20.0, i: 0.1, d: 0.2}
+        state_publish_rate: 25
+        action_monitor_rate: 10
+

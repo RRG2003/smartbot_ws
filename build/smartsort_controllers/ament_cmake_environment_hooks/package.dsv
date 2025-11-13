@@ -1,0 +1,4 @@
+source;share/smartsort_controllers/local_setup.bash
+source;share/smartsort_controllers/local_setup.dsv
+source;share/smartsort_controllers/local_setup.sh
+source;share/smartsort_controllers/local_setup.zsh

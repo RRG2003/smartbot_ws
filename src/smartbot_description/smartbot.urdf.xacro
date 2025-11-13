@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot name="smartbot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Base -->
+  <link name="base_link">
+    <visual><geometry><box size="0.6 0.4 0.1"/></geometry></visual>
+    <collision><geometry><box size="0.6 0.4 0.1"/></geometry></collision>
+    <inertial><mass value="20"/><inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/></inertial>
+  </link>
+
+  <!-- Differential wheels (simplified) -->
+  <link name="left_wheel_link"/><link name="right_wheel_link"/>
+  <joint name="left_wheel_joint" type="continuous"><parent link="base_link"/><child link="left_wheel_link"/></joint>
+  <joint name="right_wheel_joint" type="continuous"><parent link="base_link"/><child link="right_wheel_link"/></joint>
+
+  <!-- Camera -->
+  <link name="camera_link">
+    <visual><geometry><box size="0.06 0.06 0.06"/></geometry></visual>
+  </link>
+  <joint name="camera_joint" type="fixed"><parent link="base_link"/><child link="camera_link"><origin xyz="0.25 0 0.3" rpy="0 0 0"/></child></joint>
+
+  <!-- Arm base -->
+  <link name="arm_base_link"/>
+  <joint name="arm_base_joint" type="fixed"><parent link="base_link"/><child link="arm_base_link"><origin xyz="0.0 0.0 0.15" rpy="0 0 0"/></child></joint>
+
+  <!-- Simple 4-DOF chain -->
+  <link name="link1"/><joint name="joint1" type="revolute"><parent link="arm_base_link"/><child link="link1"><limit lower="-1.57" upper="1.57" effort="50" velocity="1.0"/><origin xyz="0 0 0.05"/></child></joint>
+  <link name="link2"/><joint name="joint2" type="revolute"><parent link="link1"/><child link="link2"><limit lower="-1.5" upper="1.5" effort="40" velocity="1.0"/></child></joint>
+  <link name="link3"/><joint name="joint3" type="revolute"><parent link="link2"/><child link="link3"><limit lower="-1.5" upper="1.5"/></child></joint>
+  <link name="ee_link"/>
+  <joint name="joint4" type="revolute"><parent link="link3"/><child link="ee_link"><limit lower="-3.14" upper="3.14"/></child></joint>
+
+  <!-- End effector / gripper (visual only) -->
+  <link name="gripper_link">
+    <visual><geometry><box size="0.08 0.08 0.02"/></geometry></visual>
+  </link>
+  <joint name="gripper_joint" type="fixed"><parent link="ee_link"/><child link="gripper_link"/></joint>
+</robot>
+

@@ -1,0 +1,4 @@
+source;share/smartbot_description/local_setup.bash
+source;share/smartbot_description/local_setup.dsv
+source;share/smartbot_description/local_setup.sh
+source;share/smartbot_description/local_setup.zsh

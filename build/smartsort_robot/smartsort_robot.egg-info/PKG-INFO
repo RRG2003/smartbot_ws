@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: smartsort-robot
+Version: 1.0.0
+Summary: Autonomous Warehouse Sorting Robot with ROS2 Jazzy
+Maintainer: SmartSort Team
+Maintainer-email: smartsort@example.com
+License: Apache License 2.0

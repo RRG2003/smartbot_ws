@@ -1,0 +1,3 @@
+[console_scripts]
+gripper_controller = smartsort_robot.gripper_controller:main
+robot_brain = smartsort_robot.robot_brain:main

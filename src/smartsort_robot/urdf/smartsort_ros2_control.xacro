@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="smartsort_robot">
+
+  <!-- π constant for limits -->
+  <xacro:property name="PI" value="3.14159265359"/>
+
+  <ros2_control name="SmartSortSystem" type="system">
+
+    <!-- Hardware interface plugin depending on simulator -->
+    <xacro:if value="$(arg is_ignition)">
+      <hardware>
+        <plugin>ign_ros2_control/IgnitionSystem</plugin>
+      </hardware>
+    </xacro:if>
+
+    <xacro:unless value="$(arg is_ignition)">
+      <hardware>
+        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+      </hardware>
+    </xacro:unless>
+
+    <!-- ======================
+         DRIVE JOINTS (velocity)
+         ====================== -->
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-10.0</param>
+        <param name="max">10.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-10.0</param>
+        <param name="max">10.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- ======================
+         ARM JOINTS (position)
+         ====================== -->
+    <joint name="shoulder_joint">
+      <command_interface name="position">
+        <param name="min">-${PI/2}</param>
+        <param name="max">${PI/2}</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="elbow_joint">
+      <command_interface name="position">
+        <param name="min">-${PI/2}</param>
+        <param name="max">${PI/2}</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_joint">
+      <command_interface name="position">
+        <param name="min">-${PI/2}</param>
+        <param name="max">${PI/2}</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- ======================
+         GRIPPER JOINTS (prismatic)
+         ====================== -->
+    <joint name="left_finger_joint">
+      <command_interface name="position">
+        <param name="min">0.0</param>
+        <param name="max">0.04</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_finger_joint">
+      <command_interface name="position">
+        <param name="min">-0.04</param>
+        <param name="max">0.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- Passive caster (no actuation, state only) -->
+    <joint name="caster">
+      <state_interface name="position"/>
+    </joint>
+
+  </ros2_control>
+
+</robot>

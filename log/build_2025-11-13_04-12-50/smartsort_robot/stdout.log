@@ -1,0 +1,29 @@
+running develop
+running egg_info
+creating smartsort_robot.egg-info
+writing smartsort_robot.egg-info/PKG-INFO
+writing dependency_links to smartsort_robot.egg-info/dependency_links.txt
+writing entry points to smartsort_robot.egg-info/entry_points.txt
+writing requirements to smartsort_robot.egg-info/requires.txt
+writing top-level names to smartsort_robot.egg-info/top_level.txt
+writing manifest file 'smartsort_robot.egg-info/SOURCES.txt'
+reading manifest file 'smartsort_robot.egg-info/SOURCES.txt'
+writing manifest file 'smartsort_robot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort-robot.egg-link (link to .)
+Installing gripper_controller script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+Installing robot_brain script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+
+Installed /home/rishabh/smartbot_ws/build/smartsort_robot
+running symlink_data
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+symbolically linking /home/rishabh/smartbot_ws/build/smartsort_robot/resource/smartsort_robot -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+symbolically linking /home/rishabh/smartbot_ws/build/smartsort_robot/package.xml -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+symbolically linking /home/rishabh/smartbot_ws/build/smartsort_robot/launch/warehouse.launch.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+symbolically linking /home/rishabh/smartbot_ws/build/smartsort_robot/worlds/warehouse.sdf -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/rviz

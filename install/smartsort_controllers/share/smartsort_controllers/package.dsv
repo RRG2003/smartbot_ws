@@ -1,0 +1,8 @@
+source;share/smartsort_controllers/hook/cmake_prefix_path.ps1
+source;share/smartsort_controllers/hook/cmake_prefix_path.dsv
+source;share/smartsort_controllers/hook/cmake_prefix_path.sh
+source;share/smartsort_controllers/local_setup.bash
+source;share/smartsort_controllers/local_setup.dsv
+source;share/smartsort_controllers/local_setup.ps1
+source;share/smartsort_controllers/local_setup.sh
+source;share/smartsort_controllers/local_setup.zsh
