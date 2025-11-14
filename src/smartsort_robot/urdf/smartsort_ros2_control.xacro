@@ -3,24 +3,14 @@
 
   <xacro:property name="PI" value="3.14159265359"/>
 
-  <ros2_control name="SmartSortSystem" type="system">
+  <!-- ==============================================
+       ROS2 Control System 1: Differential Drive (Wheels)
+       ============================================== -->
+  <ros2_control name="DiffDriveSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
 
-    <!-- Hardware interface plugin -->
-    <xacro:if value="$(arg is_ignition)">
-      <hardware>
-        <plugin>ign_ros2_control/IgnitionSystem</plugin>
-      </hardware>
-    </xacro:if>
-
-    <xacro:unless value="$(arg is_ignition)">
-      <hardware>
-        <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-      </hardware>
-    </xacro:unless>
-
-    <!-- ======================
-         DRIVE WHEELS (velocity control)
-         ====================== -->
     <joint name="left_wheel_joint">
       <command_interface name="velocity">
         <param name="min">-10.0</param>
@@ -38,10 +28,16 @@
       <state_interface name="position"/>
       <state_interface name="velocity"/>
     </joint>
+  </ros2_control>
 
-    <!-- ======================
-         ARM JOINTS (position control)
-         ====================== -->
+  <!-- ==============================================
+       ROS2 Control System 2: Robot Arm
+       ============================================== -->
+  <ros2_control name="ArmSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
     <joint name="shoulder_joint">
       <command_interface name="position">
         <param name="min">-${PI/2}</param>
@@ -71,10 +67,16 @@
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
     </joint>
+  </ros2_control>
 
-    <!-- ======================
-         GRIPPER FINGERS (position control)
-         ====================== -->
+  <!-- ==============================================
+       ROS2 Control System 3: Gripper
+       ============================================== -->
+  <ros2_control name="GripperSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
     <joint name="left_finger_joint">
       <command_interface name="position">
         <param name="min">0.0</param>
@@ -94,7 +96,19 @@
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
     </joint>
-
   </ros2_control>
+
+  <!-- ==============================================
+       Gazebo ROS2 Control Plugin
+       Points to the CORRECT controller config file
+       ============================================== -->
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find smartsort_controllers)/config/controller_manager.yaml</parameters>
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+    </plugin>
+  </gazebo>
 
 </robot>

@@ -103,20 +103,28 @@ def generate_launch_description():
         output='screen',
         arguments=[
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-            '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
-            '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
             '/camera/image_raw@sensor_msgs/msg/Image@gz.msgs.Image',
             '/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
         ]
     )
     
-    
+    # =====================================================
+    # CONTROLLER SPAWNERS
+    # =====================================================
     
     # Joint State Broadcaster Spawner
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
         arguments=['joint_state_broadcaster'],
+        output='screen'
+    )
+    
+    # ⭐ DIFF DRIVE CONTROLLER SPAWNER (THIS WAS MISSING!)
+    diff_drive_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['diff_drive_controller'],
         output='screen'
     )
     
@@ -148,10 +156,23 @@ def generate_launch_description():
         )
     )
     
-    # Delay arm_controller after joint_state_broadcaster
-    delay_arm_controller = RegisterEventHandler(
+    # Delay diff_drive_controller after joint_state_broadcaster
+    delay_diff_drive_controller = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=joint_state_broadcaster_spawner,
+            on_start=[
+                TimerAction(
+                    period=2.0,
+                    actions=[diff_drive_controller_spawner]
+                )
+            ]
+        )
+    )
+    
+    # Delay arm_controller after diff_drive_controller
+    delay_arm_controller = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=diff_drive_controller_spawner,
             on_start=[
                 TimerAction(
                     period=2.0,
@@ -179,7 +200,7 @@ def generate_launch_description():
     # =====================================================
     
     robot_brain = TimerAction(
-        period=6.0,  # Wait for all controllers to be ready
+        period=8.0,  # Increased wait time for all controllers
         actions=[
             Node(
                 package='smartsort_robot',
@@ -192,7 +213,7 @@ def generate_launch_description():
     )
     
     gripper_controller_node = TimerAction(
-        period=6.0,
+        period=8.0,
         actions=[
             Node(
                 package='smartsort_robot',
@@ -222,6 +243,7 @@ def generate_launch_description():
         
         # Controller spawning (with delays)
         delay_joint_state_broadcaster,
+        delay_diff_drive_controller,        # ⭐ ADDED
         delay_arm_controller,
         delay_gripper_controller,
         

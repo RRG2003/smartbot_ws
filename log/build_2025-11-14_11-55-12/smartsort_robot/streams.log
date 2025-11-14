@@ -1,0 +1,50 @@
+[1.872s] Invoking command in '/home/rishabh/smartbot_ws/src/smartsort_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rishabh/smartbot_ws/build/smartsort_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartsort_robot build --build-base /home/rishabh/smartbot_ws/build/smartsort_robot/build install --record /home/rishabh/smartbot_ws/build/smartsort_robot/install.log --single-version-externally-managed install_data
+[2.275s] running egg_info
+[2.275s] creating ../../build/smartsort_robot/smartsort_robot.egg-info
+[2.307s] writing ../../build/smartsort_robot/smartsort_robot.egg-info/PKG-INFO
+[2.308s] writing dependency_links to ../../build/smartsort_robot/smartsort_robot.egg-info/dependency_links.txt
+[2.308s] writing entry points to ../../build/smartsort_robot/smartsort_robot.egg-info/entry_points.txt
+[2.308s] writing requirements to ../../build/smartsort_robot/smartsort_robot.egg-info/requires.txt
+[2.308s] writing top-level names to ../../build/smartsort_robot/smartsort_robot.egg-info/top_level.txt
+[2.309s] writing manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+[2.367s] reading manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+[2.368s] writing manifest file '../../build/smartsort_robot/smartsort_robot.egg-info/SOURCES.txt'
+[2.368s] running build
+[2.369s] running build_py
+[2.369s] creating /home/rishabh/smartbot_ws/build/smartsort_robot/build
+[2.369s] creating /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib
+[2.369s] creating /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+[2.370s] copying smartsort_robot/robot_brain.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+[2.377s] copying smartsort_robot/gripper_controller.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+[2.396s] copying smartsort_robot/__init__.py -> /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot
+[2.396s] running install
+[2.406s] running install_lib
+[2.436s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+[2.436s] copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/robot_brain.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+[2.437s] copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/gripper_controller.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+[2.437s] copying /home/rishabh/smartbot_ws/build/smartsort_robot/build/lib/smartsort_robot/__init__.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot
+[2.437s] byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/robot_brain.py to robot_brain.cpython-312.pyc
+[2.440s] byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/gripper_controller.py to gripper_controller.cpython-312.pyc
+[2.441s] byte-compiling /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot/__init__.py to __init__.cpython-312.pyc
+[2.441s] running install_data
+[2.441s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index
+[2.441s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index
+[2.442s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+[2.442s] copying resource/smartsort_robot -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/ament_index/resource_index/packages
+[2.442s] copying package.xml -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot
+[2.442s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+[2.443s] copying launch/warehouse.launch.py -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/launch
+[2.448s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+[2.448s] copying urdf/smartsort_ros2_control.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+[2.454s] copying urdf/smartsort_robot.urdf.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+[2.476s] copying urdf/smartsort_gazebo.xacro -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/urdf
+[2.494s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+[2.494s] copying worlds/warehouse.sdf -> /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/worlds
+[2.496s] creating /home/rishabh/smartbot_ws/install/smartsort_robot/share/smartsort_robot/rviz
+[2.497s] running install_egg_info
+[2.535s] Copying ../../build/smartsort_robot/smartsort_robot.egg-info to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages/smartsort_robot-1.0.0-py3.12.egg-info
+[2.536s] running install_scripts
+[2.736s] Installing gripper_controller script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+[2.736s] Installing robot_brain script to /home/rishabh/smartbot_ws/install/smartsort_robot/lib/smartsort_robot
+[2.737s] writing list of installed files to '/home/rishabh/smartbot_ws/build/smartsort_robot/install.log'
+[2.785s] Invoked command in '/home/rishabh/smartbot_ws/src/smartsort_robot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rishabh/smartbot_ws/build/smartsort_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishabh/smartbot_ws/install/smartsort_robot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/smartsort_robot build --build-base /home/rishabh/smartbot_ws/build/smartsort_robot/build install --record /home/rishabh/smartbot_ws/build/smartsort_robot/install.log --single-version-externally-managed install_data

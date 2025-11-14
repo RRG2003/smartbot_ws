@@ -1,0 +1,42 @@
+[0.029s] Invoking command in '/home/rishabh/smartbot_ws/build/smartbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rishabh/smartbot_ws/src/smartbot_description -DCMAKE_INSTALL_PREFIX=/home/rishabh/smartbot_ws/install/smartbot_description
+[0.400s] -- The C compiler identification is GNU 13.3.0
+[0.560s] -- The CXX compiler identification is GNU 13.3.0
+[0.614s] -- Detecting C compiler ABI info
+[0.785s] -- Detecting C compiler ABI info - done
+[0.799s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.799s] -- Detecting C compile features
+[0.800s] -- Detecting C compile features - done
+[0.819s] -- Detecting CXX compiler ABI info
+[1.011s] -- Detecting CXX compiler ABI info - done
+[1.029s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.030s] -- Detecting CXX compile features
+[1.031s] -- Detecting CXX compile features - done
+[1.060s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.326s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.590s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.842s] -- Added test 'lint_cmake' to check CMake code style
+[1.848s] -- Added test 'xmllint' to check XML markup files
+[1.854s] -- Configuring done (1.6s)
+[1.863s] -- Generating done (0.0s)
+[1.868s] -- Build files have been written to: /home/rishabh/smartbot_ws/build/smartbot_description
+[1.879s] Invoked command in '/home/rishabh/smartbot_ws/build/smartbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rishabh/smartbot_ws/src/smartbot_description -DCMAKE_INSTALL_PREFIX=/home/rishabh/smartbot_ws/install/smartbot_description
+[1.883s] Invoking command in '/home/rishabh/smartbot_ws/build/smartbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rishabh/smartbot_ws/build/smartbot_description -- -j8 -l8
+[1.967s] Invoked command in '/home/rishabh/smartbot_ws/build/smartbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rishabh/smartbot_ws/build/smartbot_description -- -j8 -l8
+[1.985s] Invoking command in '/home/rishabh/smartbot_ws/build/smartbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rishabh/smartbot_ws/build/smartbot_description
+[1.999s] -- Install configuration: ""
+[1.999s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/ament_index/resource_index/package_run_dependencies/smartbot_description
+[1.999s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/ament_index/resource_index/parent_prefix_path/smartbot_description
+[2.000s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/environment/ament_prefix_path.sh
+[2.000s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/environment/ament_prefix_path.dsv
+[2.000s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/environment/path.sh
+[2.000s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/environment/path.dsv
+[2.000s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/local_setup.bash
+[2.001s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/local_setup.sh
+[2.001s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/local_setup.zsh
+[2.001s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/local_setup.dsv
+[2.001s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/package.dsv
+[2.002s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/ament_index/resource_index/packages/smartbot_description
+[2.002s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/cmake/smartbot_descriptionConfig.cmake
+[2.002s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/cmake/smartbot_descriptionConfig-version.cmake
+[2.002s] -- Installing: /home/rishabh/smartbot_ws/install/smartbot_description/share/smartbot_description/package.xml
+[2.006s] Invoked command in '/home/rishabh/smartbot_ws/build/smartbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rishabh/smartbot_ws/build/smartbot_description
